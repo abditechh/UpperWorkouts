@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upper Body Workout</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #22c55e;
+    font-size: 2.5rem;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.card img {
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Clickable checklist */
+.checklist li {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.checklist li:hover {
+    background: #334155;
+}
+
+.checklist li.done {
+    text-decoration: line-through;
+    color: #22c55e;
+    background: #052e16;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <h1>💪 Upper Body Workout</h1>
+</header>
+
+<section class="card">
+    <h2>🔥 Warm-Up</h2>
+    <ul>
+        <li>5 min light cardio</li>
+        <li>Dynamic stretching + foam rolling</li>
+    </ul>
+</section>
+
+<section class="card">
+    <img src="images/1.png">
+    <h2>1. Barbell Overhead Press</h2>
+
+    <ul class="checklist">
+        <li onclick="toggleDone(this)">Week 1: 2 × 4</li>
+        <li onclick="toggleDone(this)">Week 2: 3 × 4</li>
+        <li onclick="toggleDone(this)">Week 3: 4 × 4</li>
+        <li onclick="toggleDone(this)">Week 4: 2 × 4 (heavier)</li>
+    </ul>
+
+    <ul>
+        <li>Keep core tight</li>
+        <li>Bar moves straight overhead</li>
+    </ul>
+</section>
+
+<section class="card">
+  <img src="images/2.png">
+    <h2>2. Wide-Grip Pull-Ups</h2>
+
+    <ul class="checklist">
+        <li onclick="toggleDone(this)">3 × 6</li>
+    </ul>
+
+    <ul>
+        <li>Full stretch</li>
+        <li>Controlled tempo</li>
+    </ul>
+</section>
+
+<section class="card">
+   <img src="images/3.png">
+    <h2>3. Close-Grip Bench Press</h2>
+
+    <ul class="checklist">
+        <li onclick="toggleDone(this)">Week 1: 2 × 10</li>
+        <li onclick="toggleDone(this)">Week 2: 2 × 11</li>
+        <li onclick="toggleDone(this)">Week 3: 2 × 12</li>
+        <li onclick="toggleDone(this)">Week 4: 2 × 10 (heavier)</li>
+    </ul>
+
+    <ul>
+        <li>Elbows tucked</li>
+    </ul>
+</section>
+
+<section class="card">
+   <img src="images/4.png">
+    <h2>4A. Seated Cable Row</h2>
+
+    <ul class="checklist">
+        <li onclick="toggleDone(this)">3 × 12</li>
+    </ul>
+
+    <img src="images/5.png">
+    <h2>4B. Incline Dumbbell Lateral Raise</h2>
+
+    <ul class="checklist">
+        <li onclick="toggleDone(this)">3 × 15</li>
+    </ul>
+
+    <ul>
+        <li>Superset (minimal rest)</li>
+    </ul>
+</section>
+
+<section class="card">
+    <img src="images/6.png">
+    <h2>5A. Cable Crossover</h2>
+
+    <ul class="checklist">
+        <li onclick="toggleDone(this)">2 sets (10 low + 10 mid)</li>
+    </ul>
+
+    <img src="images/7.png">
+    <h2>5B. Rope Face Pull</h2>
+
+    <ul class="checklist">
+        <li onclick="toggleDone(this)">2 × 20</li>
+    </ul>
+</section>
+
+<section class="card">
+    <img src="images/8.png">
+     <img src="images/9.png">
+    <h2>6. Supinated Dumbbell Curl</h2>
+
+    <ul class="checklist">
+        <li onclick="toggleDone(this)">3 × 12</li>
+    </ul>
+
+    <ul>
+        <li>No swinging</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>⏱ Rest Times</h2>
+    <ul>
+        <li>Compound: 2–3 min</li>
+        <li>Isolation: 1–2 min</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>📈 Goal</h2>
+    <ul>
+        <li>Add reps first, then weight</li>
+        <li>Stay 1–2 reps shy of failure</li>
+    </ul>
+</section>
+
+</div>
+
+<script>
+function toggleDone(element) {
+    element.classList.toggle("done");
+}
+</script>
+
+</body>
+</html>
